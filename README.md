@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Project Setup and Deployment Guide
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installing Dependencies
+Run the following command to install project dependencies:
 
-## Available Scripts
+```bash
+npm i
+```
 
-In the project directory, you can run:
+To force installation despite potential issues, use:
 
-### `npm start`
+```bash
+npm i --force
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Running the Project Locally
+To start the project on your local environment, execute:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm start
+```
 
-### `npm test`
+This will host the application locally for testing and development.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Building the Project
+To create a production build, use:
 
-### `npm run build`
+```bash
+npm run build
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This will generate optimized files in the `build` directory.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Chrome Extension Setup
+To deploy this project as a Chrome extension, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Run the build command:
+   ```bash
+   npm run build
+   ```
+2. Locate the `background.js` and `content.js` files within the `build` folder. Copy or move them as needed to ensure they are included in the build.
+3. Open Chrome and navigate to `chrome://extensions/`.
+4. Enable "Developer mode" (toggle located at the top-right corner of the page).
+5. Click "Load unpacked" and select the `build` directory of this project.
+6. The extension should now be uploaded and ready for use.
 
-### `npm run eject`
+## Notes
+- Ensure all required scripts for the extension are appropriately referenced in the `manifest.json`.
+- Test the extension thoroughly before publishing it to avoid user issues.
+- For additional debugging, use Chrome's Developer Tools (`F12`) on the extensions page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Additional Commands
+- To clean and remove temporary files:
+  ```bash
+  npm run clean
+  ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
