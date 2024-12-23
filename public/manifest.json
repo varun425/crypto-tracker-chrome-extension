@@ -1,0 +1,19 @@
+{
+  "name": "Crypto Price Tracker",
+  "description": "Track the current prices and trends of Bitcoin and Ethereum",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {},
+  "action": {
+    "default_popup": "index.html",
+    "default_popup_width": 400,
+    "default_popup_height": 600
+  },
+  "icons": {
+    "16": "volatility.png",
+    "48": "volatility.png",
+    "128": "volatility.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.coingecko.com/*"]
+}

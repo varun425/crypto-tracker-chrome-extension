@@ -1,0 +1,89 @@
+# Ignore Python Bytecode Files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual Environment
+venv/
+.env/
+
+# Ignore Logs
+*.log
+
+# Ignore IDE Files
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+*.editorconfig
+
+# Ignore System Files
+.DS_Store
+Thumbs.db
+
+# Ignore Compiled Code
+*.so
+*.out
+*.class
+
+# Ignore Distribution Files
+dist/
+build/
+*.egg-info/
+*.whl
+
+# Ignore Environment Variables
+.env
+.env.*
+
+# Ignore Test Coverage Data
+.coverage
+.cache/
+*.cover
+coverage.xml
+
+# Ignore Debugging and Profiler Outputs
+*.prof
+*.stackdump
+
+# Ignore Dependency Management Files
+Pipfile.lock
+poetry.lock
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Ignore Temporary Files
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.save
+*.swp
+
+# Ignore CI/CD files
+.tox/
+.nox/
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Ignore Backup and Archive Files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore Docker Files
+docker-compose.override.yml
+docker-compose.debug.yml
+*.pid
+
+# Ignore Node Files
+node_modules/
+.npm/
+.eslintcache
+*.tsbuildinfo
+.parcel-cache/
